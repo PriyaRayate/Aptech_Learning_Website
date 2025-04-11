@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aptech Learning Virar West Blogs</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #0e0d41;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+    
+}
+
+header h1 {
+    font-size: 45px;
+    background: linear-gradient(45deg, #FFA500, #FF4500);
+  -webkit-background-clip: text;
+  color: transparent; 
+    margin-top: 90px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+header p {
+    color: #b4b4b4;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.blogs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.blog {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog .read-time {
+    color: #999;
+    font-size: 14px;
+}
+
+.blog .date {
+    color: #666;
+    font-size: 14px;
+}
+
+.blog h2 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #333;
+}
+
+.blog .summary {
+    font-size: 16px;
+    color: #555;
+}
+
+.blog .learn-more {
+    color: #007bff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.blog .learn-more:hover {
+    text-decoration: underline;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: left;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+footer nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+footer .explore-more {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+footer .explore-more:hover {
+    text-decoration: underline;
+}
+
+.blog img{
+    /* width: px; */
+    background-position: fixed;
+    background-size: auto;
+    height: 210px;
+    border-radius: 5px;
+}
+
+.blog{
+    display: flex;
+}
+
+/* .blog .blogimg{
+    width: 50px;
+    height: 150px;
+} */
+
+.blog .blog-cont{
+    padding-left: 15px;
+}
+
+.blog-cont p{
+    padding-bottom: 20px;
+}
+.blog-cont a{
+    text-decoration: none;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #0e0d41;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Our Blog's</h1>
+            <p>where expert and undiscovered voices can share their writing on any topic.</p>
+        </header>
+        <section class="blogs">
+            <div class="blog">
+                <div class="blogimg"><img src="images/blog_python.jpg" alt=""></div>
+                <div class="blog-cont">
+                
+                <p class="date">02 Jan 25</p>
+                <h2>Understanding the Basics of Python Programming</h2>
+                <p class="summary">Python is a versatile language used widely for web development, data analysis, and more.</p>
+                
+                <a href="pdf/frontend.pdf" target="_blank">Open Front-End PDF</a>
+            </div>
+        </div>
+            <div class="blog">
+                <div class="blogimg"><img src="images/blog_frontend1.jpg" alt=""></div>
+                <div class="blog-cont">
+               
+                <p class="date">28 Dec 24</p>
+                <h2>Frontend Development for Beginners</h2>
+                <p class="summary">Learn how to build your first web page with HTML and style it with CSS.</p>
+                <a href="pdf/frontend.pdf" target="_blank">Open Front-End PDF</a>
+            </div>
+        </div>
+            <div class="blog">
+                <div class="blogimg"><img src="images/blog_backend.png" alt=""></div>
+                <div class="blog-cont">
+                
+                <p class="date">25 Dec 24</p>
+                <h2>What is Backend?</h2>
+                <p class="summary">Discover tips and tricks to write cleaner and more efficient JavaScript code.</p>
+                <a href="pdf/frontend.pdf" target="_blank">Open Front-End PDF</a>
+            </div>
+        </div>
+        <div class="blog">
+            <div class="blogimg"><img src="images/blog_digital.jpg" alt=""></div>
+            <div class="blog-cont">
+            
+            <p class="date">25 Dec 24</p>
+            <h2>Why Digital Marketing is Important?</h2>
+            <p class="summary">Discover tips and tricks to write cleaner and more efficient JavaScript code.</p>
+            <a href="pdf/frontend.pdf" target="_blank">Open Front-End PDF</a>
+        </div>
+    </div>
+        </section>
+        <footer>
+            <nav>
+                <a href="#">Our Blogs</a>
+                <a href="#">Videos</a>
+                <a href="#">Podcasts</a>
+            </nav>
+        </footer>
+    </div>
+</body>
+</html>

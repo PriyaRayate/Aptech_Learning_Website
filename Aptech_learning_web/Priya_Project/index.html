@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+   
+    <title> Aptech Learning - Virar</title>
+</head>
+
+<body>
+
+  <!-- -----------Navbar -->
+    <section class="first">
+    <header>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="images/aptech-learning-logo.png" class="logoimg" >
+        </div>
+        <ul class="navul">
+            <li><a href="#">Home</a></li>
+            <li><a  href="#courseid" >Courses</a></li>
+            <li><a href="#careerid">Career Services</a></li>
+            <li><a href="blog&resource.html">Blog/Resources</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <div class="btn">
+            <button id="contbtn"><a href="contact.html"><i class="fa-solid fa-user"></i> Contact Us</a></button>
+          </div>
+        </ul>
+    </nav>
+  </header>
+</section>
+
+
+<!-- ----------Strip -->
+<section class="2nd">
+    <div class="second">
+    <p><a href="#">Exclusive Offer</a></p>
+    </div>
+</section>
+
+<!------------ Slider -->
+
+  <section class="slidersec">
+    <div class="slider">
+        <div class="wrapper">
+            <img src="images/img1.png" class="slide">
+            <img src="images/img2.png" class="slide">  
+            <img src="images/img3.png" class="slide">  
+            <img src="images/img4.png" class="slide">  
+        </div>
+        <div class="form">
+          <i class="fa-solid fa-comments"></i>
+            <h3>Career Guidance Form</h3>
+            <p>Your Journey, Our Expertise.</p>
+            <form id='registration-form'>
+                <div>
+                    <label for="name">Name</label><br>
+                    <input type="text" id="name" name="name" placeholder="">
+                </div>
+                <div>
+                    <label for="phone">Phone Number</label>
+                    <input type="phone" id="phone" name="phone" placeholder="">
+                </div>
+                <div>
+                    <label for="course">Interested Course</label><br>
+                    <input type="text" id="incourse" name="incourse" placeholder=""><br><br>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+    <button class="prev" onclick="prevSlide()">&#10094;</button> 
+    <button class="next" onclick="nextSlide()">&#10095;</button> 
+    
+       <div class="dots-container">
+        
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </section>
+<!-- -------------Category -->
+    <section class="forth" id="courseid">
+      <div class="catmsg">
+      <P>Find your Ideal</P>
+      <h2>Programs from<br> world’s best<br> universities</h2>
+     </div>
+     <div class="catstyle">
+      <div class="category">
+        <ul class="catul">
+         <li class="firstli" data-category="popular" text-alignment="Left"> 
+          <i class="fa-solid fa-chart-line"></i>
+          <a href="javascript:void(0)">Popular Courses</a><i class="fa-solid fa-angle-right">
+          </i></li>
+
+         <li data-category="ai & -ml">
+          <i class="fa-solid fa-robot"></i>
+          <a href="javascript:void(0)">AI & Machine Learning</a><i class="fa-solid fa-angle-right">
+          </i></li>
+
+         <li data-category="data-science">
+          <i class="fa-solid fa-atom"></i>
+          <a href="javascript:void(0)">Data Science/Analysis</a><i class="fa-solid fa-angle-right">
+          </i></li>
+
+         <li data-category="program-languages">
+          <i class="fa-solid fa-laptop-code"></i>
+          <a href="javascript:void(0)">Programming Languages</a><i class="fa-solid fa-angle-right">
+          </i></li>
+
+         <li data-category="web-development">
+          <i class="fa-solid fa-gears"></i>
+          <a href="javascript:void(0)">Web Development</a><i class="fa-solid fa-angle-right">
+          </i></li>
+
+         <li data-category="Cloud-Solutions">
+          <i class="fa-solid fa-cloud"></i>
+          <a href="javascript:void(0)">Cloud Computing</a><i class="fa-solid fa-angle-right">
+          </i></li>
+
+         <li data-category="cyber-security">
+          <i class="fa-solid fa-lock"></i>
+          <a href="javascript:void(0)">Cyber/Computer Security</a><i class="fa-solid fa-angle-right">
+          </i></li>
+
+         <li data-category="app-development">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <a href="javascript:void(0)">Mobile App Development</a><i class="fa-solid fa-angle-right">
+          </i></li>
+        </ul>
+        
+      </div>
+
+        <!-- ---------Cards -->
+
+      
+
+      <div class="fifth">
+        <h4 id="section-title">POPULAR COURSES</h4>
+        <div class="card-container" id="courseCards"></div>
+    </div>
+        <!-- <h4 >POPULAR COURSES</h4>
+         
+       <div class="card-container" id="courseCards">
+        <div class="card">
+        <img src="images/ainml.png" alt="">
+        <div class="card-cont">
+          <h5>Artificial Intelligence & Machine Learning</h5>
+          <p>TOTAL DURATION: 346 hours</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+       </div>
+
+       <div class="card">
+        <img src="images/datascience.jpg" alt="">
+        <div class="card-cont">
+          <h5>Data Science & Analytics</h5>
+          <p>TOTAL DURATION: 346 hours</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+       </div>
+
+       <div class="card">
+        <img src="images/python_program.jpg" alt="">
+        <div class="card-cont">
+          <h5>Python Developer</h5>
+          <p>TOTAL DURATION: 346 hours</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+       </div>
+
+
+       <div class="card-container">
+        <div class="card">
+        <img src="images/web_develop.jpg" alt="">
+        <div class="card-cont">
+          <h5>Web Development</h5>
+          <p>TOTAL DURATION: 346 hours</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+       </div>
+
+       <div class="card">
+        <img src="images/cloud-computing.jpg" alt="">
+        <div class="card-cont">
+          <h5>Cloud Computing</h5>
+          <p>TOTAL DURATION: 346 hours</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+       </div>
+
+       <div class="card">
+        <img src="images/cyber.jpg" alt="">
+        <div class="card-cont">
+          <h5>Cyber/Computer Security</h5>
+          <p>TOTAL DURATION: 346 hours</p>
+          <a href="" class="btn">Read More</a>
+        </div>
+       </div>
+      </div>
+      </div>
+    </div> -->
+
+    
+
+    </section>
+    <!-- Sixth Section -->
+    <section class="sixth">
+     <div class="online-boot">
+      <p>Our Online Bootcamp</p>
+      <h2>An Immersive learning experience</h2>
+    </div>
+      <div class="row">
+        <div class="col">
+          <!-- <i class="fa-solid fa-briefcase"></i> -->
+           <img src="images/skills1.gif" alt="" class="skillimg" >
+          <h5>Develop Skills For Real career growth</h5>
+          <p>Cutting-edge curriculum designed in guidance with industry and academia to develop job-ready skills. </p>
+        </div>
+
+        <div class="col">
+          <img src="images/trainer.gif" alt="">
+          <!-- <i class="fa-solid fa-chalkboard-user"></i> -->
+          <h5>Learn from experts active in their field, not out-of-touch trainers</h5>
+          <p>Leading practitioners who bring current best practices and case studies to sessions that fit into your work schedule.</p>
+        </div>
+
+        <div class="col">
+          <img src="images/computerhtml.gif" alt="">
+          <!-- <i class="fa-solid fa-laptop-code"></i> -->
+          <h5>Learn by Working on real-world problems</h5>
+          <p>Capstone projects involving real world data sets with virtual labs for hands-on learning.</p>
+        </div>
+        <div class="col">
+          <img src="images/clock1.gif" alt="">
+          <!-- <i class="fa-solid fa-clock"></i> -->
+          <h5>Structured guidance ensuring learning never stops </h5>
+          <p>24x7 Learning support from mentors and a community of like-minded peers to resolve any conceptual doubts.</p>
+        </div>
+      </div>
+    </section>
+<!-- Career -->
+    <section class="seven" id="careerid">
+      <div class="partner">
+        
+        <h1><i class="fa-solid fa-handshake"></i></i>Our Esteemed Educational Partners</h1>
+        <p>We collaborate with renowned educational institutions.
+          APTECH Learning Virar West brings you access to world-class courses, expert trainers, 
+          and a wide range of industry-relevant programs designed to enhance your skills and career prospects.</p>
+        <div class="partnerbtn">
+         <button id="pbtn"><a href="demo1.html">Request for demo</a></button>
+        </div>
+      </div>
+       <div class="hire">
+        <h2>Our students get hired in...</h2>
+        <div class="hirerow">
+          <div class="hirecol">
+            <img src="images/wipro2.png" alt="">
+          </div>
+          <div class="hirecol">
+            <img src="images/jp.png" alt="">
+          </div>
+          <div class="hirecol">
+            <img src="images/infosys.png" alt="">
+          </div>
+          <div class="hirecol">
+            <img src="images/jio.png" alt="">
+          </div>
+          <div class="hirecol">
+           <img src="images/cisco-logo.png" alt="">
+          </div>
+          <div class="hirecol">
+            <img src="images/tech-mac.png" alt="">
+          </div>
+          <div class="hirecol">
+            <img src="images/hp.png" alt="">
+          </div>
+          <div class="hirecol">
+            <img src="images/techmantra.jpg" alt="">
+          </div>
+          <div class="hirecol">
+            <img src="images/siemens.png" alt="">
+          </div>
+          <div class="hirecol">
+          <img src="images/cog.png" alt="">
+          </div>
+          <div class="hirecol">
+          <img src="images/eyyy.png" alt="">
+          </div>
+          <div class="hirecol">
+            <img src="images/syntel.png" alt="">
+          </div>
+          
+        </div>
+       </div>
+       
+    </section>
+  
+  <section class="footsec">
+  <footer>
+  <div class="foot-cont">
+      <div class="col-3">
+        <h1 class="logo">Aptech<span>Learning</span></h1>
+        <p>Join Aptech Learning to kick-start your career with industry-relevant curriculum for developing in-demand skills, and get prepared for job opportunities in top companies.</p>
+
+      </div>
+      <div class="col-3">
+        <h4>Address</h4>
+        <p><i class="fa fa-map-marker-alt me-3"></i>1st FLOOR, Building No 3, Nana Apartment,Virar(W),Mumbai, Maharashtra 410303</p>
+        <p><i class="fa fa-phone-alt me-3"></i>1800-209-144</p>
+        <p><i class="fa fa-envelope me-3"></i>www.aptechlearning.com</p>
+      </div>
+
+      <div class="col-3">
+        <h4>Quick Links</h4>
+        <a href="index.html" class="btn-link">Home</a>
+        <a href="contact.html" class="btn-link">Contact Us </a>
+        <a href="blog&resource.html" class="btn-link">Blog/Resources</a>
+        <a href="" class="btn-link">Courses</a>
+        <a href="" class="btn-link">Career Service</a>
+        
+   
+      </div>
+      <div class="col-3">
+        <h4>About Us</h4>
+        <p>Aptech Learning is the pioneer in vocational skill training and non-formal academic curriculum-based training programs since 1986 across various industries & countries.</p>
+        <div class="social">
+          <a href="" class="social-btn"><i class="fab fa-x-twitter"></i></a>
+          <a href="" class="social-btn"><i class="fab fa-facebook"></i></a>
+          <a href="" class="social-btn"><i class="fab fa-youtube"></i></a>
+          <a href="" class="social-btn"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+
+      </div>
+      
+      
+    </footer>
+    
+  </section>
+  <div class="copy">
+      <p>Copyright © 2025 Aptech Ltd. All rights reserved.</p>
+    </div>
+      
+
+    <script>
+      document.getElementById('registration-form').addEventListener('submit', function(e) {
+        e.preventDefault();
+  
+        const formData = new FormData(this);
+        const urlEncodedData = new URLSearchParams(formData).toString();  // Convert FormData to URL-encoded format
+  
+        fetch('http://127.0.0.1:3000/', {  // Pointing to the backend route
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/x-www-form-urlencoded'  // Set the correct content type
+          },
+          body: urlEncodedData
+        })
+        .then(response => response.text())
+        .then(data => alert(data))
+        .catch(error => console.log('Error:', error));
+      });
+    </script>
+ <script src="index.js"></script>
+<script src="script.js"></script>
+<script src="bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

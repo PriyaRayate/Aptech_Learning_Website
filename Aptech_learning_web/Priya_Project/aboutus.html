@@ -1,0 +1,237 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Aptech Learning Virar West</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f4f5f7;
+            color: #8a8787;
+            line-height: 1.6;
+
+            background-image: url(https://i1.wp.com/doctorsofcourage.org/wp-content/uploads/2017/11/computer-blue-opacity-background.jpg?ssl=1);
+            background-size: cover;
+            background-position: center;
+        }
+
+        .heading {
+            text-align: center;
+            padding: 50px 20px 30px;
+        }
+
+        .heading h1 {
+            font-size: 42px;
+            background: linear-gradient(45deg, #FFA500, #da3a00);
+            -webkit-background-clip: text;
+            color: transparent; 
+            margin-bottom: 10px;
+            padding-top: 110px;
+        }
+
+        .heading p {
+            font-size: 18px;
+            color: #b5b2b2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .about-us1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 50px;
+        }
+
+        .about-us {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin: 40px auto;
+            padding: 10px;
+            max-width: 1100px;
+            height: 450px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(200, 200, 200, 0.1);
+            border-radius: 10px;
+        }
+
+        .about-us img {
+            flex: 1;
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .content {
+            flex: 1;
+            padding: 20px 40px;
+        }
+
+        .content h2 {
+            font-size: 28px;
+            color: black;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+
+        /* Cards */
+
+        .about-us2{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        gap: 40px;
+        margin: 40px auto;
+        max-width: 1600px;
+        }
+        
+        .about-item{
+            text-align: center;
+            background-color: white;
+            padding: 30px;
+            box-shadow:  0 0 9px rgba(0, 0, 0, 0.6);
+            width: 450px;
+            height: 320px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .about-item i{
+            font-size: 30px;
+            margin: 0;
+        }
+
+        .about-item h3{
+            font-size: 25px;
+            margin-bottom: 10px;
+            color: black;
+        }
+
+        .about-item p{
+            color: #555;
+        }
+        .about-item hr{
+            width: 46px;
+            height: 3px;
+            
+            background-color: #5fbff9;
+            margin: 0 auto;
+            border: none;
+        }
+
+        .about-item:hover{
+            background-color: #5fbff9;
+        }
+
+        .about-item:hover i,.about-item:hover h3, .about-item:hover p{
+            color: #fff;
+        }
+
+        .about-item:hover hr{
+            background-color: #fff;
+        }
+
+        .about-item:hover i{
+            transform: translateY((-20px));
+        }
+
+        .about-item:hover i,.about-item:hover h3, .about-item:hover hr{
+            transition: all 400ms ease-in-out;
+        }
+
+        @media (max-width: 768px) {
+            .about-us {
+                flex-direction: column;
+                padding: 15px;
+            }
+
+            .about-us img {
+                margin-bottom: 20px;
+            }
+
+            .content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <h1>About Us</h1>
+        <p>Welcome to Aptech Learning Virar West, your gateway to a bright future in IT, multimedia, and professional courses. We are committed to empowering students with industry-relevant skills and hands-on learning.</p>
+    </div>
+    <section class="about-us1">
+        <div class="about-us">
+        <img src="images/team.jpg" alt="Aptech Learning Team">
+        <div class="content">
+            <h2>Why Choose Aptech Learning Virar West?</h2>
+            <p>
+                At Aptech Learning Virar West, we offer world-class training programs in IT, 
+                accounting, digital marketing, and more. Our experienced faculty, state-of-the-art infrastructure, 
+                and globally recognized certifications set us apart as leaders in professional education.
+            </p>
+            <p>
+                Join our thriving community of learners and take your first step toward a rewarding career.
+                 With a focus on practical skills and industry insights, we ensure you're job-ready from day one.
+            </p>            
+        </div>
+
+    </div>
+
+        <!-- Cards -->
+
+        <section class="about-us2">
+                            <div class="about-item" text-center>
+                                <i class="fa fa-book"></i>
+                                <h3>MISSION</h3>
+                                <hr>
+                                <p>Our mission at Aptech Learning Virar West is to empower students with practical, 
+                                    industry-relevant skills that foster career growth.
+                                     We are dedicated to providing high-quality training programs in technology, business, and creative fields, 
+                                     helping individuals enhance their competencies and achieve their professional goals.
+                                </p>
+                            </div>
+                        
+
+                            <div class="about-item" text-center>
+                                <i class="fa fa-globe"></i>
+                                <h3>VISION</h3>
+                                <hr>
+                                <p>Our vision is to be a leading global provider of cutting-edge education and training, 
+                                    shaping the future workforce by imparting world-class knowledge, expertise, and innovation.
+                                     We aim to create an ecosystem where learning, technology, and creativity converge to build a brighter tomorrow for our students and society at large.
+                                </p>
+                            </div>
+                        
+                        
+                            <div class="about-item" text-center>
+                                <i class="fa fa-pencil-alt"></i>
+                                <h3>ACHIEVEMENT</h3>
+                                <hr>
+                                <p>Aptech Learning Virar West has successfully trained over 5,000 students, 
+                                    equipping them with the skills needed to excel in their careers. 
+                                    Our consistent track record of student placements, successful partnerships with top industry players, 
+                                    and recognition in the community as a leading educational provider make us a trusted institution for shaping careers.
+                                </p>
+                            </div>
+                        </section>
+                   
+    </section>
+</body>
+</html>

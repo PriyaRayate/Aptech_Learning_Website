@@ -1,0 +1,236 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+/* Heading style */
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #5c9ded;
+}
+
+/* Submit button style */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    background-color: #5c9ded;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.submit-btn:hover {
+    background-color: #4a87c5;
+}
+
+.submit-btn:active {
+    background-color: #357bb3;
+}
+
+    </style>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request a Demo - Classes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Request a Demo</h1>
+        <form action="/submit_form" method="POST" class="request-form">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="class-date">Preferred Demo Date</label>
+                <input type="date" id="class-date" name="class_date" required>
+            </div>
+
+            <button type="submit" class="submit-btn">Request Demo</button>
+        </form>
+    </div>
+</body>
+</html>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating form</title>
+    <style>
+        body{
+            background-color: gray;
+        }
+        .exa{
+            margin-left: 25%;
+            margin-top: 3%;
+        }
+        .formcont{
+            width: 50%;
+            height: 600px;
+            background-color: #fff;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 1px 5px 8px rgba(224, 29, 127);
+        }
+        .formcont h1{
+            font-size: 40px;
+            color: blueviolet;
+        }
+         form .user-det .detail{
+            padding-bottom: 20px;
+        }
+        .detail label{
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .detail input{
+            height: 40px;
+            background-color: rgb(248, 239, 241);
+            border-radius: 10px;
+            border: none;
+            padding-left: 10px;
+        }
+        .detail textarea{
+            background-color: rgb(248, 239, 241);
+            border-radius: 10px;
+            border: none;
+            padding-left: 10px;
+        }
+         .button #btn{
+            padding: 10px;
+            border-radius: 10px;
+            border: none;
+            background-color: blueviolet;
+         }
+         .button #btn a{
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+            font-size: 18px;
+         }
+         .button #btn:hover{
+            background-color: palevioletred;
+         }
+
+    </style>
+</head>
+<body>
+    <div class="exa">
+    <div class="formcont">
+        <form action=""> 
+            <h1>Student Registration Form</h1>
+            <div class="user-det">
+                <div class="detail">
+                     <label for="full_Name">FULL NAME:</label>
+                     <input type="text" name="full_Name" size="50" placeholder="Enter Ur Full Name..." required>
+                </div>
+                <div class="detail">
+                    <label for="add">ADDRESS:</label> <br>
+                    <textarea name="add" id="add" rows="6" cols="70" placeholder="Enter Add..." required></textarea>
+               </div>
+               <div class="detail">
+                <label for="em">Email:</label>
+                <input type="email" id="em" name="em" placeholder="Enter Email">
+                </div>
+                <div class="detail">
+                    <label for="lang">Languages you Know:</label>
+                    C: <input type="checkbox" checked>
+                    C++:<input type="checkbox">
+                    Java:<input type="checkbox">
+                    Python:<input type="checkbox">
+                </div>
+                 <div class="detail">
+                    <label for="gender">GENDER:</label>
+                    Male:<input type="radio" name="status">
+                    Female:<input type="radio" name="status">
+                 </div>
+                 <div class="detail">
+                    <label for="dob">Date Of Birth:</label>
+                    <input type="date" name="dob" required>
+                 </div>
+                 <div class="button">
+                 <button id="btn"><a href="">Submit</a></button>
+                 <button id="btn"><a href="">Reset</a></button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
